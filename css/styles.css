@@ -1,0 +1,396 @@
+:root {
+  --background-color: #ffffff;
+  --second-text-color: #2196f3;
+  --owner-text-color: #757575;
+  --font-main-color: #212121;
+  --buttons-color: #f5f4fa;
+  --background-footer-color: #2f303a;
+  --main-font: "Roboto", sans-serif;
+  --border-color: #eeeeee;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--background-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ----------------шапка сторінки---------------- */
+
+.header {
+  background-color: var(--background-color);
+  display: flex;
+}
+
+.header>.container {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+
+.nav-link-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-connect {
+margin-left: auto;
+}
+
+.header {
+  height: 80px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+  
+.logo {
+  text-decoration: var(--text-decoration);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--second-text-color);
+}
+
+.logo-web {
+  color: #000000;
+  font-weight: 700;
+  margin-right: 93px;
+}
+
+.contact-link,
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--font-main-color);
+  text-decoration: var(--text-decoration);
+  margin-right: 50px;
+}
+
+.contact-link {
+  color: var(--owner-text-color);
+  text-decoration: var(--text-decoration);
+}
+
+.header a:hover,
+.header a:focus {
+  color: var(--second-text-color);
+}
+
+.nav-link.current,
+.contact-link.current {
+  color: var(--second-text-color);
+}
+/* ----------------замовити послугу---------------- */
+
+.hero {
+  background-color: var(--background-footer-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.container-hero {
+  display: block;
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+  width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.button {
+  background-color: var(--second-text-color);
+  color: var(--background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  font-family: inherit;
+  border: 0;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  border: 1px solid transparent;
+  min-width: 216px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--second-text-color);
+}
+
+/* ----------------Переваги---------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantage-list {
+  display: flex;
+  gap: 29px;
+  padding-top: 94px;
+  padding-bottom: 118px;
+}
+
+.advantages-item {
+  width: 270px;
+}
+
+.advantages-item:first-child {
+  margin-left: 0;
+}
+
+.advantage-title {
+  text-transform: uppercase;
+  font-size: inherit;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantage-text {
+  color: var(--owner-text-color);
+  line-height: 1.71;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 85px;
+}
+
+/* ----------------Наша команда---------------- */
+
+.team {
+  background: #f5f4fa;
+  margin-bottom: 9px;
+}
+
+.team-content {
+  padding-top: 30px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.team-name{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--font-main-color);
+  margin-bottom: 10px;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--owner-text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-list {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 94px;
+}
+
+/* ----------------Підвал---------------- */
+.footer {
+  background: var(--background-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+.logo-studio-white {
+  color: var(--background-color);
+}
+
+.footer-address {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.71;
+  color: var(--background-color);
+  display: block;
+  margin-bottom: 9px;
+}
+
+
+address {
+  padding-top: 20px;
+}
+
+.footer-contact-link {
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--second-text-color);
+}
+
+/* ----------------шапка сторінки---------------- */
+
+.header {
+  background-color: var(--background-color);
+}
+
+/* ----------------навігація сторінки---------------- */
+
+.btn {
+  background-color: var(buttons-color);
+  color: var(--font-main-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 22px;
+  border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-buttons {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  margin-top: 94px;
+}
+
+.filter-button-item:not(:last-child) {
+  margin-right: 8px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--second-text-color);
+  color: var(--background-color);
+}
+
+/* ----------------контент сторінки---------------- */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.project-list-item {
+  display: block;
+  width: calc((100% - 60px) / 3);
+}
+
+.portofino-text {
+  padding: 20px 24px;
+  border: 1px;
+  border-style: solid;
+  border-top-width: 0;
+  border-top-style: hidden;
+  border-color: var(--border-color);
+}
+
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--font-main-color);
+  margin-bottom: 4px;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--owner-text-color);
+}
