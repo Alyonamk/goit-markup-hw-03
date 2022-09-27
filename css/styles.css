@@ -242,16 +242,11 @@ padding-bottom: 94px;
 
 .team {
   background: #f5f4fa;
-  margin-bottom: 9px;
 }
 
 .team-content {
   padding: 30px 0 30px 0;
 } 
-
-.section-button {
-  margin-bottom: 50px;
-}
 
 .section-title {
   font-size: 36px;
@@ -291,7 +286,12 @@ padding-bottom: 94px;
   background: var(--background-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
 
+.footer .logo {
+  display: inline-block;
+  margin-right: 0px;
+  margin-bottom: 20px;
 }
 
 .logo-studio-white {
@@ -304,15 +304,9 @@ padding-bottom: 94px;
   line-height: 1.71;
   color: var(--background-color);
   display: block;
-  margin-bottom: 9px;
 }
 
-
-.address {
-  margin-top: 20px;
-}
-
-.address-info {
+.address-info:not(:last-child) {
   margin-bottom: 9px;
 }
 
